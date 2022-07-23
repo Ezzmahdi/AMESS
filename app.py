@@ -2,8 +2,7 @@ from flask import Flask, redirect, render_template, request, flash
 from flask_socketio import SocketIO
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from sqlalchemy import false, true
-from sqlalchemy.orm import sessionmaker
+
 app = Flask(__name__,static_url_path='', static_folder='static')
 app.config['SECRET_KEY'] = "#$Geg4535%^%tERDFHd4@%$#"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
