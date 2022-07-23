@@ -85,6 +85,10 @@ def create():
     else:
         return render_template("create.html")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 @socketio.on('order')
 def retrieve_template(id):
     template_id = int(id)
